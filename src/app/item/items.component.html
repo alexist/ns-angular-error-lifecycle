@@ -24,6 +24,7 @@ The theme also provides a set of helper class names such as p-20, h1, h2, and te
 You can learn more about the NativeScript core theme at https://github.com/nativescript/theme
 -->
 <GridLayout>
+    <StackLayout>
     <Label [text]="itemService.value"></Label>
     <ListView [items]="items">
         <ng-template let-item="item">
@@ -32,5 +33,5 @@ You can learn more about the NativeScript core theme at https://github.com/nativ
             </StackLayout>
         </ng-template>
     </ListView>
-
+    </StackLayout>
 </GridLayout>
