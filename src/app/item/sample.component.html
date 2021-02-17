@@ -1,0 +1,9 @@
+<ActionBar title="My App">
+</ActionBar>
+
+<StackLayout>
+    <Label [text]="count"></Label>
+    <Label [text]="rendered()"></Label>
+    <Button [nsRouterLink]="['/sample2']" text="Sample2"></Button>
+    <Button [nsRouterLink]="['/sample2']" text="Sample2 (clear history)" clearHistory="true"></Button>
+</StackLayout>

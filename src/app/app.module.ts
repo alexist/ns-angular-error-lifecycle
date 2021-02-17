@@ -6,6 +6,8 @@ import { AppComponent } from "./app.component";
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 import {GlobalErrorHandler} from "./global-error-handler";
+import {SampleComponent} from "./item/sample.component";
+import {Sample2Component} from "./item/sample2.component";
 
 @NgModule({
     bootstrap: [
@@ -18,7 +20,9 @@ import {GlobalErrorHandler} from "./global-error-handler";
     declarations: [
         AppComponent,
         ItemsComponent,
-        ItemDetailComponent
+        ItemDetailComponent,
+        SampleComponent,
+        Sample2Component
     ],
     providers: [
         {

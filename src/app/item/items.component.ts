@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 
 import { Item } from "./item";
 import { ItemService } from "./item.service";
+import {TraceService} from "./trace.service";
 
 @Component({
     selector: "ns-items",
@@ -9,11 +10,12 @@ import { ItemService } from "./item.service";
 })
 export class ItemsComponent implements OnInit {
     items: Array<Item>;
-
-    constructor(public itemService: ItemService) { }
+    count:number;
+    constructor(public itemService: ItemService, private traceService:TraceService) { }
 
     ngOnInit(): void {
         this.items = this.itemService.getItems();
         this.itemService.value = "No item";
+        this.count = this.traceService.count
     }
 }

@@ -25,7 +25,10 @@ You can learn more about the NativeScript core theme at https://github.com/nativ
 -->
 <GridLayout>
     <StackLayout>
+        <Button [nsRouterLink]="['/sample']" text="Sample"></Button>
+        <Button [nsRouterLink]="['/sample']" text="Sample (clear history )" clearHistory="true"></Button>
     <Label [text]="itemService.value"></Label>
+
     <ListView [items]="items">
         <ng-template let-item="item">
             <StackLayout>
